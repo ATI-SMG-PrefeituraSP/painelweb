@@ -1,0 +1,38 @@
+﻿/* CSS layout */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#masthead {
+}
+
+#top_nav {
+}
+
+#container {
+	min-width: 600px;
+}
+
+#left_col {
+
+padding-left:300px;
+position: absolute;
+left:30px;
+top: 30px
+
+}
+
+#right_col {
+	width: 200px;
+	float: right;
+}
+
+#page_content {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+#footer {
+	clear: both;
+}

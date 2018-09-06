@@ -1,0 +1,181 @@
+﻿/** 
+ * Default layout - Painel Web
+ * @author Rogerio Lino <rogeriolino@gmail.com>
+ */
+body {
+    background: url(http://localhost/painelweb/themes/video1920X1080/fundo.png) no-repeat center top fixed;
+    background-repeat:no-repeat
+ 
+    
+}
+
+
+
+
+
+
+#layout, #layout * { 
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+/* 
+ * Senha Atual - Ultima senha chamada
+ */
+#mensagem {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#mensagem span {
+    padding: 100px 29px;
+    display: inline-block;
+}
+
+#senha {
+    font-weight: bold;
+    position:absolute;
+    left:30px;
+    top:350px
+    
+
+}
+
+/* local */
+
+#local {
+    font-weight: normal;
+    position:absolute;
+    left:635px;
+    top:220px;
+    font-size: 90px;
+    font-family:  Arial
+    
+}
+
+
+#local-numero {    
+   font-weight: bold;
+   position:absolute;
+   left:695px;
+   top:355px
+
+ 
+}
+
+#local-numero span {
+    font-size: 210px;
+    font-family:  Arial
+
+}
+
+
+#local_chamada {
+ font-weight: bold;
+    padding-botton:200px;
+  
+
+	
+	
+}
+
+/*
+ * Ultimas senhas chamadas
+ */
+#historico {
+    width:  1000px;
+    position:absolute;
+   left:180px;
+   top:670px;
+  
+}
+
+#historico .senhas {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#historico .senhas div.senha-chamada {
+    text-align: center;
+    display:   inline-block;
+}
+
+#historico .senhas div.senha-chamada div.senha { 
+    font-weight:  bold; 
+    text-align: center;
+ 
+}
+
+#historico .senhas div.senha-chamada div.local {
+    text-align:  center;
+}
+
+
+/* cores - atendimento normal */
+#layout.normal { background-color: transparent; }
+#layout.normal #mensagem span { color: #fff; }
+#layout.normal #senha span { color: #eeff00; }
+#layout.normal #local span { color:  #FFFF00; }
+#layout.normal #local-numero span { color:  #FFFF00; }
+#layout.normal #historico .senhas { background:  transparent; }
+#layout.normal #historico .senhas * { color:   yellow; }
+
+/* cores - atendimento prioritario */
+#layout.prioridade { background-color: transparent; }
+#layout.prioridade #senha-container span { color: #d2322d; }
+#layout.prioridade #historico .senhas { background:  transparent; }
+#layout.prioridade #historico .senhas * { color: #333; }
+
+/* cores - atendimento prioritario quando no historico */
+#historico .senhas .prioridade * { color: #d2322d !important; }
+
+/* fonts */
+
+#mensagem span {
+    font-size: 8vw;
+}
+
+#senha span {
+    font-size: 11vw;
+}
+
+
+
+.senha-chamada .senha span {
+    font-size: 4vw;
+}
+
+.senha-chamada .local span {
+    font-size: 3vw;
+}
+    
+
+
+/* 800x600 */
+@media only screen and (max-width: 800px) {
+    
+    #historico {
+        display: none;
+    }
+    
+}
+
+#marquee { 
+    position: absolute;
+    left:30px;
+    top:920px;
+    width:  1850px;
+    font-family:Arial;
+    font-size: 90px;
+    color:yellow
+    
+}
+    
+#video { 
+    position: absolute;
+    left:942px;
+    top:70px
+}
+
